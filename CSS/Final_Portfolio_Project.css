@@ -1,0 +1,260 @@
+/* Body */
+body {
+    margin: 0%
+}
+
+/* Navbar */
+.Navbar {
+    overflow: hidden; 
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Navbar text */
+
+.Navbar a{
+    float: left;
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Navbar hover effect */
+
+.Navbar a:hover {
+    background-color: rgb(228, 37, 142);
+    color:black;
+    font-weight:bold;
+    
+}
+
+.Navbar a.active {
+    background-color: rgb(24, 85, 155);
+}
+
+/*Video*/
+
+#Typing_Video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; /* Makes sure vid is displayed across the full width of the page */
+    z-index: -1
+}
+
+.Video_Text {
+    background: rgba(26, 25, 25, 0.795);
+    color: #000;
+    width: 100%;
+    padding: 20px;
+    margin-top:23%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:bold;
+    text-align: center;
+}
+
+/* Table */
+
+* {
+    box-sizing: border-box;
+}
+
+.Column_1 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 3%;
+    height: 450px;
+    background-color: #f2f2f2;
+}
+
+.Column_2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 3.1%;
+    height: 450px;
+    background-color: #4d4d4d;
+}
+
+.Column_3 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 3.5%;
+    height:450px;
+    background-color: #4d4d4d;
+
+}
+
+.Row:after {
+    content: ""; /* Leaving this blank lets footer be displayed */
+    display: table;
+    clear: both; /* Clear the float */
+}
+
+/* Heading 1 elements */
+h1 {
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin-top: 3%;
+    color: #1a1a1a;
+}
+
+/* Paragraph elements */
+p {
+    font-family: Felbridge;
+    text-align: justify;
+    letter-spacing: 0.5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.Head_Quote {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    letter-spacing: 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color:#fff;
+}
+
+.Head_Quote:hover {
+    transform: none;
+    font-weight:normal;
+    color:#fff;
+}
+
+/* Anchor elements */
+
+a {
+    color: blue;
+}
+/* Emergency Center */
+.Center {
+    text-align:center;
+}
+/* Git Hub link Styling */
+.Link_Style {
+    text-decoration: none;
+    text-align: center;
+    background-color: #000;
+    color:white;
+    font-weight:bold;
+    width: 50%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display:block;
+    margin-left: auto;
+    margin-right:auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.Link_Style:hover {
+    background-color: #fff;
+    color: black;
+    font-weight: bold;
+    transform: scale(1.3);
+    transition: transform 1.5s;
+}
+
+/* Image elements */
+img {
+    filter: grayscale(65%);
+    border-radius: 10px;
+    max-width: 100%;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; /* In combination with margin left and right autos. Ensures Centered img */
+}
+
+img:hover {
+    transition: transform 1s;
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+/*Contact Form */
+input[type=text] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical; /* Resizes height of element */
+    font-family: Perpetua, Rockwell Extra Bold;
+}
+input[type=submit] {
+    background-color: #000;
+    color:white;
+    font-weight:bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display:block;
+    margin-left: auto;
+    margin-right:auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+input[type=submit]:hover {
+    background-color: #fff;
+    color: black;
+    font-weight: bold;
+    transform: scale(1.5);
+    transition: transform 1.5s;
+}
+
+/* Form */
+
+form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    font-family: "Trebuchet MS", Opitma;
+
+}
+
+/* Paragraph Hover Effect */
+p:hover {
+    color: #151516;
+    transition: transform 1s;
+    transform: scale(1.01);
+}
+
+h1:hover {
+    color:black;
+    font-weight: normal;
+}
+
+footer {
+    background-color:#fff;
+    width:100%;
+    padding: 1.0%;
+    text-align: center;
+}
+
+.footer {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color:#000;
+}
