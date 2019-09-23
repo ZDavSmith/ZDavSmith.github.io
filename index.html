@@ -27,19 +27,19 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="#home">Home</a>
+                <a class="nav-link scroll" href="#home">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link scroll" href="#about">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link scroll" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#quote">Quote</a>
+                <a class="nav-link scroll" href="#quote">Quote</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link scroll" href="#contact">Contact</a>
             </li>
         </ul>
     </div>
@@ -58,7 +58,7 @@
 <div class="caption text-center">
     <h1>Welcome to my Website</h1>
     <h3>Zachary Smith</h3>
-    <a class="btn btn-outline-light btn-lg" href="#about">About Me</a>
+    <a class="btn btn-outline-light btn-lg scroll" href="#about">About Me</a>
 </div>
 
 
@@ -76,10 +76,12 @@
         <div class="row space">
             <div class="col-md-6">
                 <p class="lead ">I recently graduated magna cum laude with a bachelor of arts degree in theatre and a minor in philosophy at Messiah College. 
-                        I am now participating in an intense online software development bootcamp at 
-                        <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a> with the desire to land a junior development job 
-                        after my coursework.
-                        My bachelor of arts degree has strongly developed my interpersonal framework, sharpening my ability to collaborate efficiently and effectively in short periods of time. My philosophy background has broadened my critical thinking and problem solving skills, educating me to look deeper than just the surface of difficult issues.</p>
+                        I am now a junior software developer having completed my coursework at 
+                        <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>.
+                        I view coding with all of its bits and pieces as a giant puzzle. In a lot of cases, two pieces might appear to fit together nicely but the finished product doesn't quite 
+                        turn out correctly. It is only under careful dedicaition and patience where masterpieces are shaped. I strive to achieve excellence in my work and look forward to being a part 
+                        of turning your imaginations into reality. 
+                        </p>
             </div>
             <div class="col-md-6 headshot">
                     <img src="./IMG/HeadShotOption2.jpg">
@@ -174,6 +176,7 @@
             <a href="https://www.facebook.com/profile.php?id=100003095358665" target="_blank"><i class="fab fa-facebook-square"></i></a>
             <a href="https://www.linkedin.com/in/zachary-smith-36a472176/" target="_blank"><i class="fab fa-linkedin"></i></a>
             <a href="https://www.instagram.com/zdavsmith/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/ZDavSmith" target="_blank"><i class="fab fa-github"></i></a>
         </div>
         <hr class="socket">
         &copy; Zachary Smith 2019
@@ -193,7 +196,15 @@
         trigger: 'focus'
         })
     </script>
-
+    <!-- SCROLL FUNCTION-->
+    <script>
+    jQuery(document).ready(function($) {
+        $(".scroll").click(function(event) {
+            event.preventDefault();
+            $('html,body').animate({scrollTop:$(this.hash).offset().top},2000);
+        });
+    });
+    </script>
 
 
   </body>
