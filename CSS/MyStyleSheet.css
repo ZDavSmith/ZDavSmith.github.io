@@ -26,6 +26,15 @@ body {
   height: 2rem;
 }
 
+#resume {
+  color: #fff;
+}
+
+#resume:hover {
+  color: rgb(5, 66, 231);
+  text-decoration: none;
+}
+
 .navbar-nav li {
   padding-right: .7rem;
 }
